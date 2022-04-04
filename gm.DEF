@@ -816,12 +816,12 @@ MIDI_A=C:PC22
 [SD90Init]
 comment=Init SD90 instruments in native mode
 MIDI=C:SD90InitMap W:20 C:PC0 W:20
-MapSelect=0
 ; must use disable reset sysex or it's stuck in GS mode
 DisableResetExclusive=1
 
 [SD90EmuSC88Pro]
 comment=Use Edirol SD-90 to emulate Roland SC-88Pro
+DisableExclusive=1
 PatchMap=PatchSD90
 
 
